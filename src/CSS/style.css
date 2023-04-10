@@ -1,0 +1,350 @@
+body{
+    font-family: 'Outfit',
+    sans-serif;
+    background-image: url(../imagens/Galaxia.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    
+}
+
+
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top:50px ;
+    
+}
+
+.cabecalho .titulo {
+ color: #f1ecff;
+}
+
+.cabecalho .relogio{
+    width: 100px; 
+    height: 60px;
+}
+
+.cavaleiro-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0;
+}
+
+
+.lista-cavaleiros {
+    max-width: 100%;
+    position: relative;
+}
+
+.cavaleiro-slider{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.btn-seta {
+    margin-top: 80px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.btn-seta:hover {
+    background-color: #8351FE;
+  }
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+
+}
+
+
+
+.cartao {
+    margin-top: 115px;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    background-color: #8351FE;
+    transform: translate(-50% , -50%);
+    height: 500px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.cartao.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.fundo-1 {
+   height: 400px;
+   width: 250px;
+}
+
+.fundo-1{
+    background: url(../imagens/pegaso.jpg) 
+    no-repeat;
+    background-position: 40%;
+    
+}
+.cartao .container-imagem img{
+    width: 200px;
+    height: 250px;
+}
+
+
+
+ .fundo1 .fundo-2 .fundo-3{
+    zoom: 1.04;
+}
+/* Cartao 1 */
+.cartao1 .informacoes {
+    background-color:#082C53;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.cartao1 .informacoes .nome{
+    color: #bbb9c2;
+    font-size: 22px;
+    
+    
+}
+
+.cartao1 .informacoes .vida{
+ background-color:#082C53;
+ color: #f1ecff;
+ padding: 3px 10px;   
+ border-radius: 20px;
+}
+
+.container-imagem {
+    text-align: center;
+}
+
+
+.cartao1 .descricao {
+    border-radius: 5px;
+    position: relative;
+    right: 12px;
+    width: 250px;
+    padding: 2px;
+    margin-top: -26px;
+    background: #1D5B87;
+    
+    
+}
+
+.cartao1 .descricao .titulo{
+    text-align: center;
+    color: #f1ecff;
+    background-color:#29638659;
+    font-size: 15px;
+    padding: 12px;
+    
+}
+
+.cartao1 .descricao .texto{
+    background-color:#1D5B87;
+    color: #f1ecff;
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+/* Cartao 2 */
+
+.cartao2 .informacoes {
+    background-color:#DF8D15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.cartao2 .informacoes .nome{
+    color: #88270a;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.cartao2 .informacoes .vida{
+    background-color:#EE7956;
+    font-weight: 700;
+    color: #f1ecff;
+    padding: 3px 10px;   
+    border-radius: 20px;
+}
+
+.container-imagem {
+    text-align: center;
+}
+
+.cartao2 .descricao {
+    border-radius: 5px;
+    position: relative;
+    right: 12px;
+    width: 250px;
+    padding: 2px;
+    margin-top: -48px;
+    background: #DF8D15;
+    
+    
+}
+
+.cartao2 .descricao .titulo{
+    text-align: center;
+    color:#ffffff;
+    font-weight: 700;
+    background-color:#a85840;
+    font-size: 15px;
+    padding: 12px;
+    
+}
+
+.cartao2 .descricao .texto{
+    background-color:#EE7956;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.fundo-2{
+    background: url(../imagens/Constelaçao-fenix.jpg) 
+    no-repeat;
+    background-position: 40%;
+    background-position-y: -1% ;
+}
+
+.fundo-2{
+   height: 400px;
+   width: 250px;
+}
+
+
+
+/* Cartao 3 */
+
+.cartao3 .informacoes {
+    background-color:#202B58;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.cartao3 .informacoes .nome{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.cartao3 .informacoes .vida{
+    background-color:#082857;
+    font-weight: 700;
+    color: #f1ecff;
+    padding: 3px 10px;   
+    border-radius: 20px;
+}
+
+.container-imagem {
+    text-align: center;
+}
+
+.cartao3 .descricao {
+    border-radius: 5px;
+    position: relative;
+    right: 12px;
+    width: 250px;
+    padding: 2px;
+    margin-top: -48px;
+    background:#07B2D9;
+    
+    
+}
+
+.cartao3 .descricao .titulo{
+    text-align: center;
+    color:#ffffff;
+    font-weight: 700;
+    background-color:#202B58;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.cartao3 .descricao .texto{
+    background-color:#07B2D9;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.cartao .container-imagem3 img{
+    width: 250px;
+    height: 260px;
+    right: 25px;
+}
+
+.fundo-3{
+    background: url(../imagens/Constelaçao-cisney.jpg) 
+    no-repeat;
+    background-position: 42%;
+}
+
+.fundo-3{
+    height: 410px;
+    width: 250px;
+    
+ }
